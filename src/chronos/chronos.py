@@ -52,15 +52,6 @@ def get_service():
     return service
 
 
-def print_hours(hours):
-
-    for k, v in hours.items():
-        print(f"{k: <10} : {v}")
-
-    print("-" * 20)
-    print(f"{'Total': <10}", ":", sum([v for k, v in hours.items()]))
-
-
 def timesheet(event_name):
     """
     Shows basic usage of the Google Calendar API.
