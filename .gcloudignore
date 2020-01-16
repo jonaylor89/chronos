@@ -1,7 +1,6 @@
 
 docs/
 .github/
-Dockerfile
 *.pyc
 *.pyo
 *.pyd
