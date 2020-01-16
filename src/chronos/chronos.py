@@ -107,8 +107,6 @@ def timesheet(event_name):
 
             day_of_week = start.strftime("%w")
 
-            print("[DEBUG]", day_of_week)
-
             duration = end - start
 
             hours_worked[int(day_of_week)] += duration.seconds / 3600
