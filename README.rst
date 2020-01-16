@@ -43,6 +43,7 @@ Execution
 response style
 
 .. code-block:: javascript
+
   [
     Sunday
     Monday
