@@ -58,16 +58,7 @@ def timesheet(event_name):
     Prints the start and name of the next 10 events on the user's calendar.
     """
 
-    hours_worked = {
-        "Sunday": 0,
-        "Monday": 0,
-        "Tuesday": 0,
-        "Wednesday": 0,
-        "Thursday": 0,
-        "Friday": 0,
-        "Saturday": 0,
-        "Total": 0,
-    }
+    hours_worked = [0, 0, 0, 0, 0, 0, 0]
 
     cal = get_service()
     if cal is None:
@@ -114,14 +105,13 @@ def timesheet(event_name):
             start = iso8601.parse_date(rawstart)
             end = iso8601.parse_date(rawend)
 
-            day_of_week = start.strftime("%A")
+            day_of_week = start.strftime("%w")
+
+            print("[DEBUG]", day_of_week)
 
             duration = end - start
-            total += duration.seconds / 3600
 
-            hours_worked[day_of_week] += duration.seconds / 3600
-
-    hours_worked["Total"] = total
+            hours_worked[int(day_of_week)] += duration.seconds / 3600
 
     return hours_worked
 
@@ -147,4 +137,4 @@ def event(event):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))

@@ -38,3 +38,17 @@ Execution
 .. code-block:: console
 
     $ docker run -e PORT=8000 jonaylor/chronos
+
+
+response style
+
+.. code-block:: javascript
+  [
+    Sunday
+    Monday
+    Tuesday
+    Wednesday
+    Thursday
+    Friday
+    Saturday
+  ]
