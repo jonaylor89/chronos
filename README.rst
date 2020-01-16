@@ -3,7 +3,7 @@ chronos
 =======
 
 
-.. image:: https://img.shields.io/pypi/v/chronos.svg
+.. image:: https://img.shields.io/pypi/v/chronos-api.svg
         :target: https://pypi.python.org/pypi/chronos-api
 
 .. image:: https://img.shields.io/travis/jonaylor89/chronos.svg
