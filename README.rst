@@ -32,23 +32,9 @@ API for my timesheet
 * Documentation: https://jonaylor89.github.io/chronos
 
 
-
-Installation:
--------------
+Execution
+===========
 
 .. code-block:: console
 
-    $ pip install chronos
-
-Features
---------
-
-* TODO
-
-Credits
--------
-
-This package was created with Cookiecutter_ and the `wboxx1/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`wboxx1/cookiecutter-pypackage`: https://github.com/wboxx1/cookiecutter-pypackage-poetry
+    $ docker run -e PORT=8000 jonaylor/chronos
