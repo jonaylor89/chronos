@@ -11,4 +11,4 @@ COPY . /app
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-dev
 
-CMD ["exec", "gunicorn", "--bind", ":$PORT", "--workers", "1", "--threads", "8", "src.chronos.chronos:app"]
+CMD ["gunicorn", "--bind", ":$PORT", "--workers", "1", "--threads", "8", "src.chronos.chronos:app"]
