@@ -4,7 +4,7 @@ chronos
 
 
 .. image:: https://img.shields.io/pypi/v/chronos.svg
-        :target: https://pypi.python.org/pypi/chronos
+        :target: https://pypi.python.org/pypi/chronos-api
 
 .. image:: https://img.shields.io/travis/jonaylor89/chronos.svg
         :target: https://travis-ci.org/jonaylor89/chronos

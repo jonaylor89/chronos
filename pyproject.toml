@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "chronos"
+name = "chronos-api"
 version = "0.1.0"
 description = "API for my timesheet"
 authors = ["John Naylor <jonaylor89@gmail.com>"]
