@@ -104,4 +104,5 @@ alabaster
 
 
 secrets/
+credentials.json
 token.pickle
