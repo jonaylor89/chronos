@@ -1,0 +1,5 @@
+name: chronos
+image: okteto/python:3
+command:
+- bash
+workdir: /usr/src/app
