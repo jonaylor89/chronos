@@ -8,7 +8,7 @@ Deployment
 ===========
 
 ```
-$ ./deploy.dsh
+$ ./deploy.sh
 ```
 
 response:
