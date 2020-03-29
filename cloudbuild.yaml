@@ -1,19 +1,19 @@
 steps:
-- name: 'python'
-  args: ['pip3','install', '-r', 'requirements.txt', '--user']
-# This installs your requirements and `--user` makes them persist between steps
+  - name: 'python'
+    args: ['pip3','install', '-r', 'requirements.txt', '--user']
+  # This installs your requirements and `--user` makes them persist between steps
 
-- name: 'gcr.io/cloud-builders/gcloud']
-  id: 'deployFunction'
-  args: 
-    - 'functions'
-    - 'deploy'
-    - 'chronos'
-    - '--entry-point'
-    - 'timesheet'
-    - 'source'
-    - '.'
-    - '--runtime'
-    - 'python37'
-    - '--trigger-http'
-    - '--allowed-unauthenticated'
+  - name: 'gcr.io/cloud-builders/gcloud']
+    id: 'deployFunction'
+    args: 
+      - 'functions'
+      - 'deploy'
+      - 'chronos'
+      - '--entry-point'
+      - 'timesheet'
+      - 'source'
+      - '.'
+      - '--runtime'
+      - 'python37'
+      - '--trigger-http'
+      - '--allowed-unauthenticated'
