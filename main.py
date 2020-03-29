@@ -16,8 +16,6 @@ from googleapiclient.discovery import build
 CALENDAR_ID = "jonaylor89@gmail.com"
 SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
-CLIENT_SECRET_FILE = "credentials.json"
-
 
 def timesheet(request):
     """
@@ -92,6 +90,7 @@ def timesheet(request):
             hours_worked[int(day_of_week)] += duration.seconds / 3600
 
     return str(hours_worked)
+
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
