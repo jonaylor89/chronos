@@ -5,7 +5,7 @@ steps:
 
 - name: 'gcr.io/cloud-builders/gcloud']
   id: 'deployFunction'
-  args: [
+  args: 
     - 'functions'
     - 'deploy'
     - 'chronos'
