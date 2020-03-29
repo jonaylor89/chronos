@@ -1,8 +1,0 @@
-
-docs/
-.github/
-Dockerfile
-*.pyc
-*.pyo
-*.pyd
-__pycache__
