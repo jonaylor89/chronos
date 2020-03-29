@@ -32,12 +32,12 @@ API for my timesheet
 * Documentation: https://jonaylor89.github.io/chronos
 
 
-Execution
+Deployment
 ===========
 
 .. code-block:: console
 
-    $ docker run -e PORT=8000 jonaylor/chronos
+    $ ./deploy.dsh
 
 
 response style
