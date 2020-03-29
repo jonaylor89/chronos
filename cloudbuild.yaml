@@ -16,8 +16,6 @@ steps:
   - 'chronos'
   - '--entry-point'
   - 'timesheet'
-  - 'source'
-  - '.'
   - '--runtime'
   - 'python37'
   - '--trigger-http'
