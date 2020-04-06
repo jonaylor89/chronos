@@ -16,7 +16,7 @@ gcloud auth application-default login
 ```
 
 Next, share your google calendar with the service account email for the cloud function 
-(something like whatever@serviceaccount.com in your IAM roles page) and lastly chain the CALENDAR\_ID variable in `main.py` 
+(something like whatever@serviceaccount.com in your IAM roles page) and lastly change the CALENDAR\_ID variable in `main.py` 
 to your email and you should be set up. To deploy everything you should be able to run:
 
 ```
