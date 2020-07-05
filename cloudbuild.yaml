@@ -19,4 +19,3 @@ steps:
   - '--runtime'
   - 'python37'
   - '--trigger-http'
-  - '--allow-unauthenticated'
